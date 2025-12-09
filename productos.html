@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - AgenciaWeb</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo.png" alt="AgenciaWeb" class="logo">
+        <span class="brand-name">AgenciaWeb</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html" class="active">Portfolio</a></li>
+          <li><a href="presupuesto.html">Presupuesto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="gallery-page">
+      <h1>Nuestros trabajos</h1>
+      <p>Galería de proyectos realizados. Haz clic en una imagen para ver más.</p>
+
+      <div class="grid-3 gallery">
+        <figure class="gallery-item">
+          <img src="img/producto1.jpg" alt="Proyecto 1">
+          <figcaption>Proyecto eCommerce — tienda online</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="img/producto2.jpg" alt="Proyecto 2">
+          <figcaption>Web Corporativa — empresa tecnológica</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="img/producto3.jpg" alt="Proyecto 3">
+          <figcaption>Portal Educativo — plataforma LMS</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="img/logo.png" alt="AgenciaWeb" class="logo-sm">
+        <p>AgenciaWeb - Carrer de Provença, 112B, 114, Eixample, 08029 Barcelona</p>
+      </div>
+
+      <div class="footer-right">
+        <nav class="socials">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="LinkedIn">IN</a>
+        </nav>
+        <p class="legal">&copy; <span id="year2">2025</span> AgenciaWeb. Aviso legal y política de privacidad.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
